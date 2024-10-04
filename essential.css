@@ -1,0 +1,56 @@
+#space {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: left top;
+  z-index: -6;
+  opacity: 0.4;
+  width: 200%;
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("stars2.png");
+  animation-name: move;
+  animation-duration: 12s;
+}
+#space2 {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: left top;
+  z-index: -7;
+  opacity: 0.8;
+  width: 200%;
+  height: 200%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("stars.png");
+  animation-name: move;
+  animation-duration: 8s;
+}
+
+body {
+  background-image: url("space.png");
+  background-attachment: fixed;
+  color: white;
+  font-family: Verdana;
+  margin: 0 0;
+  cursor: url(cursor.png), auto;
+  animation-name: move;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  image-rendering: pixelated;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0px;
+  }
+  50% {
+    background-position: 256px;
+  }
+  100% {
+    background-position: 512px;
+  }
+}
